@@ -1,0 +1,51 @@
+texto_avaliacao,nota,data,loja_id,plataforma
+"Atendimento excelente, funcionários muito simpáticos e atenciosos!",5,2026-02-01,Loja Centro,google
+"Comida chegou fria e embalagem estava aberta. Péssimo!",1,2026-02-01,Loja Norte,ifood
+"Demorou quase 1 hora para entregar. Inaceitável.",2,2026-02-02,Loja Sul,ifood
+"Hambúrguer delicioso, melhor da cidade! Voltarei com certeza.",5,2026-02-02,Loja Centro,google
+"Pedi um item e vieram dois errados. Muito decepcionante.",1,2026-02-03,Loja Norte,rappi
+"Mesa estava suja quando chegamos. Atendente demorou para nos atender.",2,2026-02-03,Loja Sul,google
+"Rápido, gostoso e caprichado. Recomendo muito!",5,2026-02-04,Loja Centro,ifood
+"Atendente foi grossa quando reclamei do pedido errado.",1,2026-02-04,Loja Norte,google
+"Preço justo para a qualidade oferecida. Gostei bastante.",4,2026-02-05,Loja Sul,google
+"App travou na hora de finalizar o pedido. Tive que ligar.",2,2026-02-05,Loja Centro,ifood
+"Entrega super rápida e embalagem impecável. Parabéns!",5,2026-02-06,Loja Norte,ifood
+"Faltou um item no pedido e não quiseram resolver.",1,2026-02-06,Loja Sul,rappi
+"Lanche frio e batata murcha. Não vale o preço.",2,2026-02-07,Loja Centro,ifood
+"Funcionários muito gentis e ambiente limpo. Experiência ótima!",5,2026-02-07,Loja Norte,google
+"Terceira vez que peço e erram o pedido. Absurdo.",1,2026-02-08,Loja Sul,rappi
+"Atendimento rápido e comida quentinha. Perfeito!",5,2026-02-08,Loja Centro,google
+"Esperei 1h30 pelo delivery. Comida chegou errada ainda.",1,2026-02-09,Loja Norte,ifood
+"Banheiro sujo e cheiro ruim no salão. Não volto mais.",1,2026-02-09,Loja Sul,google
+"Melhor hambúrguer que já comi! Ingredientes frescos.",5,2026-02-10,Loja Centro,google
+"Atendente simpática, mas pedido demorou muito.",3,2026-02-10,Loja Norte,google
+"Embalagem aberta e comida fria. Decepcionante.",2,2026-02-11,Loja Sul,ifood
+"Ótimo custo-benefício. Voltarei com a família.",5,2026-02-11,Loja Centro,rappi
+"Meu pedido ficou 40 minutos parado antes de sair para entrega.",2,2026-02-12,Loja Norte,ifood
+"Ambiente agradável e equipe muito atenciosa.",5,2026-02-12,Loja Sul,google
+"Carne mal passada sendo que pedi bem passada. Péssimo controle.",1,2026-02-13,Loja Centro,ifood
+"Entrega dentro do prazo e tudo correto. Recomendo!",5,2026-02-13,Loja Norte,rappi
+"Funcionário foi rude quando questionei o tempo de espera.",1,2026-02-14,Loja Sul,google
+"Lanche perfeito! Pão fresquinho e ingredientes de qualidade.",5,2026-02-14,Loja Centro,google
+"Demorou 2 horas. Quando chegou estava tudo frio.",1,2026-02-15,Loja Norte,ifood
+"Preço aumentou mas qualidade caiu. Não vale mais.",2,2026-02-15,Loja Sul,rappi
+"Atendimento nota 10! Equipe muito bem treinada.",5,2026-02-16,Loja Centro,google
+"Faltaram 3 itens no pedido e o suporte não respondeu.",1,2026-02-16,Loja Norte,ifood
+"Ambiente limpo e organizado. Boa experiência.",4,2026-02-17,Loja Sul,google
+"Comida chegou no prazo e estava deliciosa. Parabéns!",5,2026-02-17,Loja Centro,rappi
+"App do iFood mostrou entregue mas não recebi nada.",1,2026-02-18,Loja Norte,ifood
+"Atendente ignorou minha reclamação sobre o pedido errado.",1,2026-02-18,Loja Sul,google
+"Melhor experiência de delivery que já tive. Tudo perfeito!",5,2026-02-19,Loja Centro,ifood
+"Esperei 45 minutos na fila com apenas 2 pessoas na frente.",2,2026-02-19,Loja Norte,google
+"Limpeza impecável e comida saborosa. Voltarei sempre.",5,2026-02-20,Loja Sul,rappi
+"Pedido chegou incompleto e embalagem amassada.",2,2026-02-20,Loja Centro,ifood
+"Funcionários desatentos e demoram para atender.",2,2026-02-21,Loja Norte,google
+"Ótima comida mas o tempo de espera precisa melhorar.",3,2026-02-21,Loja Sul,google
+"Tudo certo, rápido e gostoso. Recomendo a todos!",5,2026-02-22,Loja Centro,google
+"Terceira reclamação sobre pedido errado. Não peço mais.",1,2026-02-22,Loja Norte,rappi
+"Mesa limpa, atendimento rápido, comida boa. Perfeito.",5,2026-02-23,Loja Sul,ifood
+"Batata fria e refrigerante quente. Básico que não funciona.",2,2026-02-23,Loja Centro,ifood
+"Entrega no prazo e tudo correto. Muito bom!",5,2026-02-24,Loja Norte,google
+"Atendente mal-humorada e demorou para trazer a conta.",2,2026-02-24,Loja Sul,google
+"Melhor fast food da cidade! Qualidade constante.",5,2026-02-25,Loja Centro,rappi
+"Demorou 1h20 e quando chegou estava errado. Absurdo.",1,2026-02-25,Loja Norte,ifood

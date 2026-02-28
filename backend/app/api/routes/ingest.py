@@ -1,4 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
+from app.core.store import store
 from pydantic import BaseModel
 import pandas as pd
 import io
@@ -32,7 +33,7 @@ async def ingest_csv(file: UploadFile = File(...)):
             detail=f"Colunas obrigatórias ausentes: {', '.join(missing)}"
         )
 
-    df["data"] = pd.to_datetime(df["data"], dayfirst=True, errors="coerce")
+    df["data"] = pd.to_datetime(df["data"], errors="coerce")
     df = df.dropna(subset=["texto_avaliacao", "nota", "data", "loja_id"])
     df = df.drop_duplicates()
 
@@ -41,6 +42,8 @@ async def ingest_csv(file: UploadFile = File(...)):
         "inicio": str(df["data"].min().date()),
         "fim": str(df["data"].max().date()),
     }
+
+    store.set(df)
 
     return IngestResponse(
         success=True,
