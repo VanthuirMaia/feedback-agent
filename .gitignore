@@ -173,4 +173,19 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Data
+data/
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
 # End of https://www.toptal.com/developers/gitignore/api/python
