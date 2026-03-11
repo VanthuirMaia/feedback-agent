@@ -23,7 +23,7 @@ O **Feedback Agent** resolve isso: você pergunta em português, ele responde co
 ## 🏗️ Arquitetura
 
 ```
-Lovable (Frontend)
+React + Vite (Frontend)
       ↓
 FastAPI (Backend REST)
       ↓
@@ -44,16 +44,35 @@ feedback-agent/
 │   ├── app/
 │   │   ├── api/
 │   │   │   └── routes/         # Endpoints FastAPI
+│   │   │       ├── health.py
+│   │   │       ├── ingest.py   # Upload de CSV
+│   │   │       ├── chat.py     # Chat com o agente
+│   │   │       └── dashboard.py # Métricas e gráficos
 │   │   ├── agent/
 │   │   │   ├── graph.py        # Grafo LangGraph
 │   │   │   ├── state.py        # Estado do agente
 │   │   │   └── nodes/          # Nós do agente
+│   │   │       ├── classify_intent.py
+│   │   │       ├── extract_filters.py
+│   │   │       ├── run_analysis.py
+│   │   │       └── generate_response.py
 │   │   ├── core/
-│   │   │   └── config.py       # Configurações e variáveis de ambiente
-│   │   ├── db/                 # Acesso ao banco de dados
+│   │   │   ├── config.py       # Configurações e variáveis de ambiente
+│   │   │   └── store.py        # Store em memória para os dados carregados
 │   │   └── main.py             # Entry point FastAPI
 │   ├── requirements.txt
+│   ├── Dockerfile
 │   └── .env.example
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Login.tsx
+│   │   │   ├── Dashboard.tsx   # Métricas e gráficos reais
+│   │   │   ├── UploadCSV.tsx   # Upload conectado na API
+│   │   │   └── Chat.tsx        # Chat conectado no agente
+│   │   └── components/
+│   ├── package.json
+│   └── Dockerfile
 ├── data/                       # Dados locais (não versionados)
 ├── docker-compose.yml
 └── README.md
@@ -65,7 +84,7 @@ feedback-agent/
 
 | Camada          | Tecnologia                     |
 | --------------- | ------------------------------ |
-| Frontend        | Lovable                        |
+| Frontend        | React + Vite + Tailwind CSS    |
 | Backend         | FastAPI + Python 3.11+         |
 | Agente IA       | LangGraph                      |
 | LLM             | OpenAI GPT-4o / gpt-4o-mini    |
@@ -77,15 +96,17 @@ feedback-agent/
 
 ## 🚀 Como rodar localmente
 
+### Backend
+
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/VanthuirMaia/feedback-agent.git
 cd feedback-agent/backend
 
 # 2. Crie o ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+.venv\Scripts\activate     # Windows
 
 # 3. Instale as dependências
 pip install -r requirements.txt
@@ -95,10 +116,24 @@ cp .env.example .env
 # edite o .env com sua OPENAI_API_KEY
 
 # 5. Rode o servidor
-uvicorn app.main:app --reload
+python -m uvicorn app.main:app --reload
 ```
 
-Acesse: `http://localhost:8000/docs`
+Acesse a documentação: `http://localhost:8000/docs`
+
+### Frontend
+
+```bash
+cd feedback-agent/frontend
+
+# 1. Instale as dependências
+npm install
+
+# 2. Rode o servidor de desenvolvimento
+npm run dev
+```
+
+Acesse: `http://localhost:8080`
 
 ---
 
@@ -107,7 +142,7 @@ Acesse: `http://localhost:8000/docs`
 - [x] Fase 1 — Visão Estratégica
 - [x] Fase 2 — Insights do Mercado
 - [x] Fase 3 — Arquitetura Técnica
-- [ ] Fase 4 — Criação Interativa ← _em andamento_
+- [x] Fase 4 — Criação Interativa ← _em andamento_
 - [ ] Fase 5 — Lançamento e PDCA
 
 ---
